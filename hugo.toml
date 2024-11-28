@@ -45,7 +45,7 @@ theme = "FixIt"
   [params.search]
     enable = true
     # type of search engine ["lunr", "algolia", "fuse"]
-    type = "lunr"
+    type = "fuse"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
@@ -292,7 +292,7 @@ theme = "FixIt"
       #  Disqus comment config (https://disqus.com)
       [params.page.comment.disqus]
         enable = true
-        shortname = "pydatamanaus"
+        shortname = "pydata-manaus"
 
 
   #  GitHub banner in the top-right or top-left corner
