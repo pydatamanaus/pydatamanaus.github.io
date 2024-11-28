@@ -308,6 +308,10 @@ theme = "FixIt"
     host = "www.gravatar.com"
     style = ""
 
+  #  Favicon config
+  [params.meta]
+    favicon = false
+
 [markup]
   _merge = "shallow"
 [outputs]
