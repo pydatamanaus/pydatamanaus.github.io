@@ -1,0 +1,316 @@
+title = 'PyData Manaus'
+baseURL = "https://pydatamanaus.github.io/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+theme = "FixIt"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categorias"
+    url = "/categories/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre nós"
+    url = "/about/"
+    weight = 4
+
+
+[params]
+  #  FixIt theme version
+  version = "0.3.15" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
+  # site description
+  description = "PyData"
+  # site keywords
+  keywords = ["Hugo", "FixIt"]
+  # site default theme ["light", "dark", "auto"]
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+
+  #  Search config
+  [params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia", "fuse"]
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    #  max number of results length
+    maxResultLength = 10
+    #  snippet length of the result
+    snippetLength = 30
+    #  HTML tag name of the highlight part in results
+    highlightTag = "em"
+    #  whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+    [params.search.fuse]
+      #  https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
+  # Header config
+  [params.header]
+    #  desktop header mode ["sticky", "normal", "auto"]
+    desktopMode = "sticky"
+    #  mobile header mode ["sticky", "normal", "auto"]
+    mobileMode = "auto"
+    #  Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      # title name
+      name = "PyData Manaus"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = "<i class='fa-solid fa-code'></i>"
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      #  whether to use typeit animation for title name
+      typeit = false
+    #  Header subtitle config
+    [params.header.subtitle]
+      # subtitle name
+      name = ""
+      # whether to use typeit animation for subtitle name
+      typeit = true
+
+
+  # Footer config
+  [params.footer]
+    enable = true
+    #  Custom content (HTML format is supported)
+    # For advanced use, see parameter `params.customFilePath.footer`
+    custom = ""
+    #  whether to show Hugo and theme info
+    hugo = true
+    #  whether to show copyright info
+    copyright = true
+    #  whether to show the author
+    author = true
+    # Site creation year
+    since = 2024
+    #  whether to show total word count of site content
+    wordCount = true
+    #  Public network security only in China (HTML format is supported)
+    gov = ""
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    #  Site creation time
+    [params.footer.siteTime]
+      enable = true
+      animate = true
+      icon = "fa-solid fa-heartbeat"
+      pre = ""
+      value = "" # e.g. "2021-12-18T16:15:22+08:00"
+    #  footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+    [params.footer.order]
+      powered = 0
+      copyright = 0
+      statistics = 0
+      visitor = 0
+      beian = 0
+
+
+  # Home page config
+  [params.home]
+    #  amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = "pydata.manaus@gmail.com"
+      # URL of avatar shown in home page
+      avatarURL = ""
+      #  identifier of avatar menu link
+      avatarMenu = ""
+      #  title shown in home page (HTML format is supported)
+      title = "PyData Manaus"
+      # subtitle shown in home page
+      subtitle = "Comunidade de ciência de dados de Manaus"
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      #  disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 1
+
+  #  Social config about the author
+  [params.social]
+    GitHub = "pydatamanaus"
+    Linkedin = "pydatamanaus"
+    Twitter = ""
+    Instagram = "pydatamanaus"
+    Facebook = ""
+    Telegram = ""
+    Medium = ""
+    Gitlab = ""
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    ORCID = ""
+    Liberapay = ""
+    Ko-Fi = ""
+    BuyMeaCoffee = ""
+    Linktree = ""
+    QQ = ""
+    QQGroup = "" # https://qun.qq.com/join.html
+    Diaspora = ""
+    CSDN = ""
+    Discord = ""
+    DiscordInvite = ""
+    Lichess = ""
+    Pleroma = ""
+    Kaggle = ""
+    MediaWiki= ""
+    Plume = ""
+    HackTheBox = ""
+    RootMe = ""
+    Feishu = ""
+    TryHackMe = ""
+    Phone = ""
+    Email = "pydata.manaus@gmail.com"
+    RSS = true
+
+
+
+    [params.page.share]
+      enable = true
+      Twitter = false
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = true
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Digg = false
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = false
+      Renren = false
+      Myspace = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Mix = false
+    #  Comment config
+    [params.page.comment]
+      enable = true
+      #  Disqus comment config (https://disqus.com)
+      [params.page.comment.disqus]
+        enable = true
+        shortname = "pydatamanaus"
+
+
+  #  GitHub banner in the top-right or top-left corner
+  [params.githubCorner]
+    enable = true
+    permalink = "https://github.com/pydatamanaus/pydatamanaus.github.io"
+    title = "Veja no GitHub"
+    position = "right" # ["left", "right"]
+
+  #  Gravatar config
+  [params.gravatar]
+    enable = true
+    host = "www.gravatar.com"
+    style = ""
+
+[markup]
+  _merge = "shallow"
+[outputs]
+  _merge = "shallow"
+[taxonomies]
+  _merge = "shallow"
